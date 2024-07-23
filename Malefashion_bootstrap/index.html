@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaleFashion</title>
+  <!-- css -->
+  <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <!-- black -->
+  <div class="blackbar"></div>
+  <nav class="navbar bg-body-tertiary fixed-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid cf">
+      <!-- logo -->
+      <a class="navbar-brand fs-4" href="#"><img src="./logo.png" alt=""></a>
+      <!-- Toggle btn  -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <!-- navlinkbody -->
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 align-items-center fs-5">
+            <li class="nav-item mx-2 ">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link " href="./shop.html">Shop</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link " href="./page.html">Page</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link " href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link " href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <!-- login sign -->
+          <div class="dflex justify-content-center align-items-center  gap-9 navbar-brand">
+            <a href=""><img src="./search.png" alt=""></a>
+            <a href=""><img src="./heart.png" alt=""></a>
+            <a href=""><img src="./cart.png" alt="">
+              <div class="price"> 0.0$ </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- slider -->
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./hero-1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./hero-2.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- //cards -->
+  <!-- card1 -->
+<div class="container-fluid cf "> 
+  <div class="row">
+    <div class="col">
+      <div class="bn1 d-flex justify-content-end">
+        <img class="m-5" src="./banner-1.jpg" class="img-fluid" alt="...">
+      </div>
+
+    </div>
+  </div>
+  <!-- card2 -->
+  <div class="row">
+    <div class="col col-lg-6">
+      <div class="bn2 "><img class="m-5" src="./banner-2.jpg" class="img-fluid" alt="..."></div>
+
+    </div>
+  </div>
+  <!-- card3 -->
+  <div class="row">
+    <div class="co">
+      <div class="bn1 d-flex justify-content-end "><img class="m-5" src="./banner-3.jpg" class="img-fluid" alt="..."></div>
+
+    </div>
+  </div>
+</div>
+
+  <!-- section best sellers -->
+  <!-- card section1-->
+   <!-- begin -->
+<div class="container-fluid cf "> 
+  <div class="row mb-2">
+    <!-- card1 -->
+    <div class="col-md-4 ">
+      <div class="card " style="width: 18rem;">
+        <img src="./product-1.jpg" class="card-img-top  " alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- card2 -->
+    <div class="col-3  ">
+      <div class="card " style="width: 18rem;">
+        <img src="./product-2.jpg" class="card-img-top  " alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- card3 -->
+    <div class="col-3  ">
+      <div class="card " style="width: 18rem;">
+        <img src="./product-3.jpg" class="card-img-top  " alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- card4 -->
+    <div class="col-3  ">
+      <div class="card " style="width: 18rem;">
+        <img src="./product-4.jpg" class="card-img-top  " alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+    </div>
+    
+    <!-- end -->
+
+  </div>
+  <!-- card section row 2 -->
+  <div class="row mt-5 ">
+    <!-- card1 -->
+    <div class="col-3  ">
+      <div class="card " style="width: 18rem;">
+        <img src="./product-5.jpg" class="card-img-top  " alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- card2 -->
+    <div class="col-3  ">
+      <div class="card " style="width: 18rem;">
+        <img src="./product-6.jpg" class="card-img-top  " alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- card3 -->
+    <div class="col-3  ">
+      <div class="card " style="width: 18rem;">
+        <img src="./product-7.jpg" class="card-img-top  " alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- card4 -->
+    <div class="col-3  ">
+      <div class="card " style="width: 18rem;">
+        <img src="./product-8.jpg" class="card-img-top  " alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+    </div>
+</div>
+  <!-- end -->
+
+  <!-- bag -->
+<div class="row my-5" style="background-color:#f3f2ee ; padding: 20vh 0vh ;">
+  <div class="col d-block ">
+  <h2>Clothing Hot</h2>
+  <h2>Shoes Collection</h2>
+  <h2>Accessories</h2></div>
+  <div class="col"><img src="./product-sale.png" class="img-fluid" alt="..."></div>
+  <div class="col"></div>
+</div>
+
+<!-- insta malefashion -->
+ <div class="container-fluid">
+  <div class="row">
+    <div class="col-3"><img src="./instagram-1.jpg" class="img-fluid" alt="Responsive image"></div>
+    <div class="col-3"><img src="./instagram-2.jpg" class="img-fluid" alt="Responsive image"></div>
+    <div class="col-3"><img src="./instagram-3.jpg" class="img-fluid" alt="Responsive image"></div>
+    <div class="col-3">
+    <h1 class="col-md container-fluid" style="color: indianred; border:2px solid red ;width: 100%; height:100%;" >Instagram</h1></div>
+  </div>
+
+  <div class="row">
+    <div class="col-3"><img src="./instagram-4.jpg" class="img-fluid" alt="Responsive image"></div>
+    <div class="col-3"><img src="./instagram-5.jpg" class="img-fluid" alt="Responsive image"></div>
+    <div class="col-3"><img src="./instagram-6.jpg" class="img-fluid" alt="Responsive image"></div>
+    <div class="col-3">
+    <p class="col-md col-lg col-sm container-fluid" style="color: indianred; border:2px solid red ;width: 100%; height:100%;" >Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. Aut, ad?</p></div>
+   
+  </div>
+
+ </div>
+<!-- captions -->
+ <div class="row d-flex justify-content-center">
+ <div class="cap d-flex justify-content-center my-2"><h6 style="color: red;margin-top: 10vh;">LATEST NEWS</h6></div></div>
+
+ <!-- last end -->
+ <div class="d-flex justify-content-center" ><h1>Fashion New Trends</h1></div>
+  <div class="row mt-5">
+    <div class="col-4"><img src="./blog-1.jpg" alt=""></div>
+    <div class="col-4"><img src="./blog-2.jpg" alt=""></div>
+    <div class="col-4"><img src="./blog-3.jpg" alt=""></div>
+  </div>
+
+<!-- footer at last -->
+<footer class="bd-footer py-4 py-md-5 mt-5" style="background-color: rgb(12, 12, 12);">
+  <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+    <div class="row">
+      <div class="col-lg-3 mb-3">
+        <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/" aria-label="Bootstrap">
+          <img src="./footer-logo.png" alt="">
+        </a>
+        <ul class="list-unstyled small">
+          <li class="mb-2" style="color: antiquewhite;" >The customer is at the heart of our uniquie business model which includes design</li>
+          </ul>
+      </div>
+      <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+        <h5>Links</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="/">Home</a></li>
+          <li class="mb-2"><a href="/docs/5.3/">Docs</a></li>
+          <li class="mb-2"><a href="/docs/5.3/examples/">Examples</a></li>
+          <li class="mb-2"><a href="https://icons.getbootstrap.com/">Icons</a></li>
+          <li class="mb-2"><a href="https://themes.getbootstrap.com/">Themes</a></li>
+          <li class="mb-2"><a href="https://blog.getbootstrap.com/">Blog</a></li>
+          <li class="mb-2"><a href="https://cottonbureau.com/people/bootstrap" target="_blank" rel="noopener">Swag Store</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>Guides</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="/docs/5.3/getting-started/">Getting started</a></li>
+          <li class="mb-2"><a href="/docs/5.3/examples/starter-template/">Starter template</a></li>
+          <li class="mb-2"><a href="/docs/5.3/getting-started/webpack/">Webpack</a></li>
+          <li class="mb-2"><a href="/docs/5.3/getting-started/parcel/">Parcel</a></li>
+          <li class="mb-2"><a href="/docs/5.3/getting-started/vite/">Vite</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>Projects</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap" target="_blank" rel="noopener">Bootstrap 5</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/tree/v4-dev" target="_blank" rel="noopener">Bootstrap 4</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/icons" target="_blank" rel="noopener">Icons</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/rfs" target="_blank" rel="noopener">RFS</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/examples/" target="_blank" rel="noopener">Examples repo</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2 mb-3">
+        <h5>Community</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/issues" target="_blank" rel="noopener">Issues</a></li>
+          <li class="mb-2"><a href="https://github.com/twbs/bootstrap/discussions" target="_blank" rel="noopener">Discussions</a></li>
+          <li class="mb-2"><a href="https://github.com/sponsors/twbs" target="_blank" rel="noopener">Corporate sponsors</a></li>
+          <li class="mb-2"><a href="https://opencollective.com/bootstrap" target="_blank" rel="noopener">Open Collective</a></li>
+          <li class="mb-2"><a href="https://stackoverflow.com/questions/tagged/bootstrap-5" target="_blank" rel="noopener">Stack Overflow</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+<!-- javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>

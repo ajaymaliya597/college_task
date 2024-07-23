@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uppercase and Text Size</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .plus, .minus {
+            height: 5vh;
+            margin: 5px;
+        }
+        .ele {
+            transition: text-transform 0.3s ease, font-size 0.3s ease;
+            margin-bottom: 10px;
+        }
+        .cbox {
+            height: 5vh;
+            width: 10%;
+            margin: 5px;
+        }
+        #colorInput {
+            margin: 5px;
+        }
+        #inct {
+            margin: 5px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="textElement" class="ele">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, delectus! Harum, nisi corrupti tempore voluptatum, dignissimos eum optio quisquam rem explicabo minus mollitia non pariatur nobis sed neque odio amet ex animi voluptatem aliquid molestias provident velit reprehenderit suscipit! Cum quo doloremque doloribus itaque nesciunt, vel odio sit veniam cupiditate.
+    </div>
+    <button id="in" class="plus">+</button>
+    <button id="dec" class="minus">-</button>
+    <input id="colorInput" type="color" class="cbox">
+    <input id="inct" type="range" min="1" max="5" value="1" step="0.1">
+</div>
+
+<script>
+    let fontSize = 1; // Base font size
+
+    document.getElementById("in").onclick = function() {
+        fontSize++;
+        document.getElementById("textElement").style.textTransform = "uppercase";
+        document.getElementById("textElement").style.fontSize = fontSize + "em";
+    };
+
+    document.getElementById("dec").onclick = function() {
+        if (fontSize > 1) {
+            fontSize--;
+            document.getElementById("textElement").style.textTransform = "lowercase";
+            document.getElementById("textElement").style.fontSize = fontSize + "em";
+        }
+    };
+
+    document.getElementById("colorInput").oninput = function() {
+        let color = document.getElementById("colorInput").value;
+        document.getElementById("textElement").style.backgroundColor = color;
+    };
+
+    document.getElementById("inct").oninput = function() {
+        fontSize = this.value; // Directly use the range input value
+        document.getElementById("textElement").style.fontSize = fontSize + "em";
+    };
+    
+</script>
+</body>
+</html>

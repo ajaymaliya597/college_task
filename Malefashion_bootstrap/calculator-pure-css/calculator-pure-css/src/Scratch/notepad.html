@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <style>
+        * {
+            margin: 5vh;
+        }
+        .container {
+            border: 2px solid black;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container1 {
+            border: 2px solid black;
+            height: 70vh;
+            padding: 10px;
+            overflow-y: auto; 
+        }
+        .containeri {
+            border: 2px solid black;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input id="note" class="containeri" type="text" placeholder="Type here...">
+    </div>
+    <div class="container1" id="inner">
+    </div>
+    <script>
+        // document.getElementById("note").oninput = function() {
+        //     document.getElementById("inner").textContent = this.value;
+        // }
+        document.getElementById("note").oninput = function(){
+            let note = document.getElementById("note").value;
+            document.getElementById("inner").innerHTML = `<h1>${note}</h1>`;
+        }
+    </script>
+</body>
+</html>
