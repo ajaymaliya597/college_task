@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // (function(a,b){
+        //     console.log("Hello" +" " +(a+b))
+        // })(10,20)
+    // let f1 = function(a,b){
+    //     console.log(a+b)
+    // }
+    // let f2 = function(a,b){
+    //     console.log(a+b)
+    // }
+    // f1(10,20);
+    // f2(`$A`,`$B`)
+    
+    // let f3 = (a,b)=>a+b;
+    // console.log(f3(100000000000000000000000000000000000000000000000000000000000000000,2000000000000000000000000000000000000000));
+function Outer() {
+    let a = 10;
+    let b = 20;
+    
+    function inner(){
+        console.log(a+b)
+    }
+    return inner;//sourrounf=din enviorment ke vjh hai
+    
+}
+
+let ans = Outer();
+ans()
+
+
+// (() =>{
+//     console.log("Hello");
+// })();
+
+//argument calling
+// function f1(a,b){
+//     console.log(a)
+//     a()
+// }
+// function f2(){
+//     console.log("Hello world")
+// }
+// f1(f2)
+
+function add(a,b) {
+    console.log(a+b)
+}
+function a(a,b,add){
+    add(a,b)
+}
+a(20,50,add)
+
+
+    </script>
+</body>
+</html>

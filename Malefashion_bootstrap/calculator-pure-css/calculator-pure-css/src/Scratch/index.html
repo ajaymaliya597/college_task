@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .line {
+            display: flex;
+            height: 2vh;
+            border: 2px solid black;
+        }
+        .util {
+            height: 2vh;
+            width: 100%;
+            cursor: pointer; /* Adds a pointer cursor on hover */
+        }
+        .red {
+            background-color: red;
+        }
+        .yellow {
+            background-color: rgb(255, 247, 0);
+        }
+        .blue {
+            background-color: rgb(0, 145, 255);
+        }
+        .green {
+            background-color: rgb(0, 255, 238);
+        }
+    </style>
+</head>
+<body>
+    <div class="line">
+        <div id="red" class="red util"></div>
+        <div id="yellow" class="yellow util"></div>
+        <div id="blue" class="blue util"></div>
+        <div id="green" class="green util"></div>
+    </div>
+    
+    <button id="btn" style="height: 30vh; background-color: aqua;">Submit</button>
+
+    <script>
+        document.getElementById("red").onclick = function() {
+            document.body.style.backgroundColor = "red";
+        };
+
+        document.getElementById("yellow").onclick = function() {
+            document.body.style.backgroundColor = "rgb(255, 247, 0)";
+        };
+
+        document.getElementById("blue").onclick = function() {
+            document.body.style.backgroundColor = "rgb(0, 145, 255)";
+        };
+
+        document.getElementById("green").onclick = function() {
+            document.body.style.backgroundColor = "rgb(0, 255, 238)";
+        };
+    </script>
+</body
